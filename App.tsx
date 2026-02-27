@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { BottomNav } from './components/BottomNav';
-import { Home } from './pages/Home';
-import { Quran } from './pages/Quran';
-import { Adhkar } from './pages/Adhkar';
-import { Tasbeeh } from './pages/Tasbeeh';
-import { Ramadan } from './pages/Ramadan';
+import { BottomNav } from './BottomNav';
+import { Home } from './Home';
+import { Quran } from './Quran';
+import { Adhkar } from './Adhkar';
+import { Tasbeeh } from './Tasbeeh';
+import { Ramadan } from './Ramadan';
 import { Tab } from './types';
 
 export default function App() {

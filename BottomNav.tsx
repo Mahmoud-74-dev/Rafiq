@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home, BookOpen, Heart, Activity, Moon } from 'lucide-react';
-import { Tab } from '../types';
+import { Tab } from './types';
 
 interface BottomNavProps {
   currentTab: Tab;

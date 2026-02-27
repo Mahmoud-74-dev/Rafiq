@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronRight, CheckCircle2, RotateCcw } from 'lucide-react';
 import { motion } from 'motion/react';
-import { adhkarData } from '../data/adhkar';
-import { AdhkarCategory, Thikr } from '../types';
+import { adhkarData } from './adhkar';
+import { AdhkarCategory, Thikr } from './types';
 
 export function Adhkar() {
   const [selectedCategory, setSelectedCategory] = useState<AdhkarCategory | null>(null);

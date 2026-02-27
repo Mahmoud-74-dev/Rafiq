@@ -1,4 +1,4 @@
-import { AdhkarCategory } from '../types';
+import { AdhkarCategory } from './types';
 
 export const adhkarData: AdhkarCategory[] = [
   {

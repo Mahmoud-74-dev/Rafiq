@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Search, ChevronRight, BookOpen } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Surah, SurahDetail } from '../types';
+import { Surah, SurahDetail } from './types';
 
 export function Quran() {
   const [surahs, setSurahs] = useState<Surah[]>([]);
