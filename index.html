@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#050505" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Meta Tags for Link Sharing (Open Graph) -->
+    <title>رفيق - رفيقك في رمضان</title>
+    <meta name="description" content="تطبيق إسلامي شامل يحتوي على الأذكار، القرآن الكريم، مواقيت الصلاة، والسبحة الإلكترونية." />
+    
+    <meta property="og:title" content="رفيق - رفيقك في رمضان" />
+    <meta property="og:description" content="تطبيق إسلامي شامل يحتوي على الأذكار، القرآن الكريم، مواقيت الصلاة، والسبحة الإلكترونية." />
+    <!-- مسار الصورة التي ستظهر عند مشاركة الرابط -->
+    <meta property="og:image" content="/icon.png" />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="رفيق - رفيقك في رمضان" />
+    <meta name="twitter:description" content="تطبيق إسلامي شامل يحتوي على الأذكار، القرآن الكريم، مواقيت الصلاة، والسبحة الإلكترونية." />
+    <meta name="twitter:image" content="/icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(reg => {
+            console.log('Service Worker registered successfully.', reg);
+          }).catch(err => {
+            console.log('Service Worker registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

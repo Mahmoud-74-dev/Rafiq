@@ -1,0 +1,19 @@
+{
+  "name": "رفيق",
+  "short_name": "رفيق",
+  "description": "تطبيق إسلامي شامل لشهر رمضان يحتوي على الأذكار، القرآن الكريم، مواقيت الصلاة، والسبحة الإلكترونية.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192 512x512 any",
+      "type": "image/png"
+    }
+  ]
+}
